@@ -1,0 +1,94 @@
+/* GENERIC */
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  color: #191919;
+}
+a {
+  all: unset;
+}
+input {
+  border-width: 0;
+  background-color: black;
+  border-radius: 50px;
+  color: whitesmoke;
+  padding: 0.5em 1em;
+  font-size: 0.8rem;
+}
+/* HEADER */
+header {
+  background-color: #ffbf18;
+  width: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  font-size: 0.8rem;
+  line-height: 20px;
+  padding: 15px 100px;
+}
+nav div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+}
+nav ul {
+  display: inline-block;
+  vertical-align: middle;
+  width: 59%;
+  text-align: end;
+}
+nav ul a {
+  margin: 0 0.8em;
+}
+.hero {
+  display: flex;
+  padding-left: 100px;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  border-block: solid black 1px;
+}
+
+.hero input {
+  font-size: 1rem;
+  padding-inline: 3em;
+  margin-top: 3em;
+}
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 5.5rem;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+  letter-spacing: -5px;
+}
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.trending {
+  display: flex;
+  flex-direction: column;
+}
+.topArticle {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+}
+.content {
+  display: flex;
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+.discover {
+  display: flex;
+  flex-direction: column;
+}
