@@ -6,6 +6,11 @@ body {
   box-sizing: border-box;
   color: #191919;
 }
+
+p {
+  color: #757575;
+}
+
 h1 {
   font-family: "Spectral", serif;
   font-size: 5.5rem;
@@ -51,6 +56,7 @@ img {
 }
 a {
   all: unset;
+  cursor: pointer;
 }
 
 input {
@@ -60,6 +66,7 @@ input {
   color: whitesmoke;
   padding: 0.5em 1em;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 /* HEADER */
@@ -71,6 +78,11 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+header p {
+  color: black;
+}
+
 nav {
   font-size: 0.8rem;
   line-height: 20px;
@@ -95,7 +107,7 @@ nav ul a {
   padding-left: 10%;
   justify-content: space-between;
   font-size: 1.2rem;
-  border-block: solid black 1px;
+  border-block: solid black 1.5px;
 }
 
 .hero input {
@@ -116,10 +128,10 @@ main {
   padding: 3em 0 1em 10%;
 }
 
-.trend p {
-  font-size: 1rem;
+h5 {
+  font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   padding-left: 0.5em;
 }
 
@@ -130,7 +142,7 @@ main {
   display: flex;
   justify-content: space-around;
   max-width: fit-content;
-  border-bottom: #e6e7e6 solid 1px;
+  border-bottom: #e6e7e6 solid 1.5px;
 }
 
 .toparticle img {
@@ -201,6 +213,36 @@ span {
   border-radius: 50px;
 }
 
+.side {
+  margin-inline: 5%;
+  color: #757575;
+}
+
+.side h5 {
+  padding: 0;
+  padding-bottom: 1.5em;
+  color: black;
+}
+
 .categories {
-  margin-inline: 10%;
+  display: flex;
+  padding-bottom: 2em;
+  border-bottom: #e6e7e6 solid 1.5px;
+}
+
+.row {
+  display: flex;
+}
+
+.row a {
+  font-size: 0.7rem;
+  padding: 1em;
+  margin: 0.2em;
+  border: #757575 solid 1px;
+  border-radius: 5px;
+}
+
+.menu {
+  padding-top: 2em;
+  font-size: 0.8rem;
 }
