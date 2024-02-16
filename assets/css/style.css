@@ -15,10 +15,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #e6e7e6;
   padding-right: 0.5em;
+  position: relative;
+  top: -10px;
 }
 
 h3 {
@@ -27,7 +29,7 @@ h3 {
 }
 
 h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   padding-left: 1em;
 }
@@ -131,6 +133,10 @@ main {
   border-bottom: #e6e7e6 solid 1px;
 }
 
+.toparticle img {
+  width: 30px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -178,14 +184,12 @@ article .column div {
 
 .articles h3 {
   font-size: 2rem;
-  padding-bottom: 1em;
-  line-height: 1px;
+  padding-block: 0.5em;
 }
 
 .author {
   display: flex;
   align-items: center;
-  padding-bottom: 2em;
 }
 .info {
   display: flex;
@@ -195,4 +199,8 @@ span {
   background-color: #f2f3f3;
   padding: 0.5em;
   border-radius: 50px;
+}
+
+.categories {
+  margin-inline: 10%;
 }
