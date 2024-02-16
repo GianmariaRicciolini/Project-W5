@@ -188,6 +188,11 @@ article .column div {
   display: flex;
   justify-content: space-between;
   margin-block: 1em;
+  width: 800px;
+}
+
+.articles article > div {
+  width: max-content;
 }
 
 .articles article img {
@@ -203,10 +208,18 @@ article .column div {
   display: flex;
   align-items: center;
 }
+
 .info {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
+
+.info div {
+  display: flex;
+  align-items: baseline;
+}
+
 span {
   background-color: #f2f3f3;
   padding: 0.5em;
@@ -214,7 +227,7 @@ span {
 }
 
 .side {
-  margin-inline: 7% 7%;
+  padding-inline: 7% 7%;
   color: #757575;
 }
 
