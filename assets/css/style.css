@@ -6,9 +6,51 @@ body {
   box-sizing: border-box;
   color: #191919;
 }
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 5.5rem;
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+  letter-spacing: -5px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e6e7e6;
+  padding-right: 0.5em;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+h6 {
+  font-size: 1rem;
+  color: #757575;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 a {
   all: unset;
 }
+
 input {
   border-width: 0;
   background-color: black;
@@ -28,7 +70,7 @@ header {
 nav {
   font-size: 0.8rem;
   line-height: 20px;
-  padding: 15px 100px;
+  padding: 15px 200px 15px 100px;
 }
 nav div {
   display: inline-block;
@@ -57,38 +99,68 @@ nav ul a {
   padding-inline: 3em;
   margin-top: 3em;
 }
-h1 {
-  font-family: "Spectral", serif;
-  font-size: 5.5rem;
-  margin-top: 0.8em;
-  margin-bottom: 0.4em;
-  letter-spacing: -5px;
-}
+
 /* MAIN */
 main {
   display: flex;
   flex-direction: column;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  padding: 3em 0 1em 100px;
+}
+
+.trend p {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 0.5em;
+}
+
+.toparticle {
+  padding-bottom: 3em;
   padding-left: 100px;
-}
-.trending {
+  font: 0.8rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  max-width: fit-content;
+  border-bottom: #e6e7e6 solid 1px;
 }
-.topArticle {
+
+.container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.square {
+  border-radius: 10px;
+  overflow: hidden;
 }
 .container {
   display: flex;
+  justify-content: space-between;
 }
-.content {
+.container article {
   display: flex;
+  flex-grow: 1;
 }
+
 article {
-  display: flex;
-  flex-direction: column;
+  width: 600px;
 }
-.discover {
+
+article .column div {
   display: flex;
-  flex-direction: column;
+}
+.content div {
+  padding-bottom: 1em;
+  align-items: center;
+}
+.articles {
+  display: flex;
 }
