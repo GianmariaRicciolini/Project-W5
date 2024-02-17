@@ -20,10 +20,10 @@ p {
 
 h1 {
   font-family: "Spectral", serif;
-  font-size: 5.5rem;
+  font-size: 7rem;
   margin-top: 0.8em;
-  margin-bottom: 0.4em;
-  letter-spacing: -5px;
+  margin-bottom: 0.2em;
+  letter-spacing: -8px;
 }
 
 h2 {
@@ -72,7 +72,7 @@ input {
   background-color: black;
   border-radius: 50px;
   color: whitesmoke;
-  padding: 0.5em 1em;
+  padding: 0.6em 1em;
   font-size: 0.8rem;
   cursor: pointer;
 }
@@ -81,10 +81,11 @@ input {
 
 header {
   background-color: #ffbf18;
-  width: auto;
+  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 header p {
@@ -94,10 +95,10 @@ header p {
 nav {
   font-size: 0.8rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   line-height: 20px;
-  padding: 15px 10% 15px 10%;
+  padding-block: 15px;
 }
 
 nav ul a {
@@ -105,14 +106,13 @@ nav ul a {
 }
 .hero {
   display: flex;
-  padding-left: 10%;
-  justify-content: space-between;
-  font-size: 1.2rem;
+  justify-content: space-evenly;
+  font-size: 1.48rem;
   border-block: solid black 1.5px;
 }
 
 .hero input {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-inline: 3em;
   margin-top: 3em;
 }
@@ -124,8 +124,9 @@ main {
 }
 
 .banner {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
+  max-width: 1500px;
 }
 
 .trend {
@@ -145,13 +146,12 @@ h5 {
   padding-bottom: 2em;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  border-bottom: #e6e7e6 solid 1.5px;
+  justify-content: center;
 }
 
 .toparticle article {
   display: flex;
-  max-width: 30%;
+  max-width: 33.3333%;
   width: 100%;
 }
 
@@ -179,15 +179,16 @@ article .column div {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 5%;
+  border-top: #e6e7e6 solid 1.5px;
 }
 
 .articles article {
   display: flex;
   justify-content: space-between;
   margin-block: 1em;
-  width: 800px;
+  max-width: 800px;
 }
 
 .box {
@@ -232,7 +233,6 @@ span {
 }
 
 aside {
-  padding-left: 10%;
   display: flex;
   flex-wrap: wrap;
   color: #757575;
@@ -262,7 +262,6 @@ aside h5 {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
   padding-top: 1.5em;
   font-size: 0.9rem;
 }
