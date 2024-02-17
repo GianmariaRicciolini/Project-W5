@@ -41,9 +41,16 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 0.97rem;
   font-weight: bold;
-  padding-left: 1em;
+  padding-left: 0.4em;
+}
+
+h5 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding-left: 0.5em;
 }
 
 h6 {
@@ -93,12 +100,15 @@ header p {
 }
 
 nav {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   line-height: 20px;
   padding-block: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul a {
@@ -135,13 +145,6 @@ main {
   padding: 3em 0 1em 0;
 }
 
-h5 {
-  font-size: 0.8rem;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  padding-left: 0.5em;
-}
-
 .toparticle {
   padding-bottom: 2em;
   display: flex;
@@ -156,16 +159,19 @@ h5 {
 }
 
 .toparticle img {
-  width: 30px;
+  width: 25px;
 }
 
 .round {
   border-radius: 50%;
   overflow: hidden;
+  height: auto;
+  width: 25px;
 }
 .square {
   border-radius: 10px;
   overflow: hidden;
+  width: 25px;
 }
 
 article .column div {
@@ -201,8 +207,9 @@ article .column div {
 }
 
 .articles h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-block: 0.5em;
+  letter-spacing: -0.5px;
 }
 
 .author {
