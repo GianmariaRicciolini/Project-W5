@@ -1,15 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     const nav = document.querySelector("nav");
-    const header = document.querySelector("header");
+    const input = document.querySelector(".nav");
+    const hero = document.querySelector(".hero");
 
-    const headerHeight = header.offsetHeight;
     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > headerHeight - 50) {
+    if (scrollPosition > hero.scrollHeight - 80) {
       nav.style.backgroundColor = "#FFFFFF";
+      input.style.backgroundColor = "#1a8917";
     } else {
       nav.style.backgroundColor = "#ffbf18";
+      input.style.backgroundColor = "black";
     }
   });
 });

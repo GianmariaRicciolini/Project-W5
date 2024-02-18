@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   color: #191919;
+  margin: 0;
 }
 
 #star {
@@ -17,10 +18,13 @@ body {
 p {
   color: #757575;
 }
-
+.h1 {
+  max-width: 150px;
+}
 h1 {
   font-family: "Spectral", serif;
-  font-size: 7rem;
+  font-size: 6rem;
+  width: 100%;
   margin-top: 0.8em;
   margin-bottom: 0.2em;
   letter-spacing: -8px;
@@ -86,45 +90,46 @@ input {
 
 /* HEADER */
 
-header {
-  background-color: #ffbf18;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-header p {
-  color: black;
-}
-
 nav {
-  font-size: 0.9rem;
+  background-color: #ffbf18;
+  font-size: 0.7rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   line-height: 20px;
   padding-block: 15px;
+  border-bottom: solid black 1.5px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
+  transition: background-color 0.5s ease;
 }
 
 nav ul a {
   margin: 0 0.8em;
 }
+
 .hero {
   display: flex;
-  justify-content: space-evenly;
   font-size: 1.48rem;
-  border-block: solid black 1.5px;
+  justify-content: space-around;
+  border-bottom: solid black 1.5px;
+  background-color: #ffbf18;
+  overflow: hidden;
+  max-width: 100%;
 }
 
+.hero div {
+  max-width: 100%;
+}
+.hero p {
+  color: black;
+}
 .hero input {
   font-size: 1.1rem;
   padding-inline: 3em;
-  margin-top: 3em;
+  margin-block: 3em;
 }
 
 /* MAIN */
@@ -136,7 +141,7 @@ main {
 .banner {
   display: block;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1280px;
 }
 
 .trend {
@@ -194,7 +199,7 @@ article .column div {
   display: flex;
   justify-content: space-between;
   margin-block: 1em;
-  max-width: 800px;
+  max-width: 750px;
 }
 
 .box {
@@ -249,13 +254,15 @@ aside h5 {
   padding: 0;
   padding-bottom: 1.5em;
   color: black;
+  max-width: fit-content;
 }
 
 .categories {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 1.5em;
   border-bottom: #e6e7e6 solid 1.5px;
-  max-width: 400px;
+  max-width: 330px;
 }
 
 .categories a {
@@ -276,4 +283,40 @@ aside h5 {
 .menu a {
   margin-inline: 0.3em;
   line-height: 2.2em;
+}
+
+@media screen and (max-width: 1280px) {
+  .hero,
+  .trend,
+  .articles {
+    padding-left: 10%;
+  }
+
+  .articles {
+    padding-right: 5%;
+  }
+
+  .categories,
+  .articles article {
+    max-width: 100%;
+  }
+
+  .toparticle article {
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero,
+  .trend,
+  .articles,
+  .banner,
+  nav {
+    padding-left: 5%;
+    padding-right: 0;
+  }
+
+  .toparticle article {
+    max-width: 100%;
+  }
 }
